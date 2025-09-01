@@ -6,35 +6,35 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A modern, full-stack e-commerce solution with real-time inventory management, payment processing, and analytics dashboard.",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+      title: "SaaS Edtech Platform",
+      description: "Multi-tenant SaaS platform built with Next.js, TypeScript, Redux Toolkit, and Node.js. Includes role-based access, payment integration, and scalable architecture for real-world SaaS businesses.",
+      tech: ["Next.js", "Node.js", "MySQL", "Khalti"],
+      githubUrl: "https://github.com/sandip-dev-max/Saas-Edtech.git",
+      liveUrl: "https://github.com/sandip-dev-max/Saas-Edtech.git",
       featured: true
     },
     {
       title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, team collaboration features, and advanced reporting.",
-      tech: ["Next.js", "TypeScript", "Supabase", "Tailwind"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+      description: "A full-stack task management system with authentication, team collaboration, and dashboard UI. Built using TypeScript, Express, Sequelize, and React with Vite.",
+      tech: ["React.js", "TypeScript", "MySQL", "Tailwind"],
+      githubUrl: "https://github.com/sandip-dev-max/focus-board.git",
+      liveUrl: "https://github.com/sandip-dev-max/focus-board.git",
       featured: false
     },
     {
-      title: "AI-Powered Analytics",
-      description: "Business intelligence dashboard with machine learning insights, predictive analytics, and automated reporting.",
-      tech: ["Python", "React", "TensorFlow", "PostgreSQL"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+      title: "TheOriginTech",
+      description: "TheOriginTech – An IT service provider company delivering web development, digital marketing, and software solutions.",
+      tech: ["React", "Node.js", "MySQL"],
+      githubUrl: "https://github.com/sandip-dev-max/TheOriginTech.git",
+      liveUrl: "https://github.com/sandip-dev-max/TheOriginTech.git",
       featured: true
     },
     {
-      title: "Social Media Dashboard",
-      description: "Unified social media management platform with scheduling, analytics, and multi-platform posting capabilities.",
-      tech: ["Vue.js", "Express", "MongoDB", "Socket.io"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+      title: "B2B platform",
+      description: "Backend system for B2B platform with role-based authentication (Admin & Company users). ",
+      tech: ["Node.js", "Express", "MYSQL", "Socket.io"],
+      githubUrl: "https://github.com/sandip-dev-max/B2B-BackEnd.git",
+      liveUrl: "https://github.com/sandip-dev-max/B2B-BackEnd.git",
       featured: false
     }
   ];
@@ -124,7 +124,7 @@ const Projects = () => {
             className="border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-smooth"
             asChild
           >
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/sandip-dev-max" target="_blank" rel="noopener noreferrer">
               View All Projects on GitHub
             </a>
           </Button>

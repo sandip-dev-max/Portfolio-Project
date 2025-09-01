@@ -14,7 +14,7 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -33,21 +33,24 @@ const Contact = () => {
             Let's <span className="text-gradient">Connect</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Ready to bring your ideas to life? I'd love to hear about your project and 
-            discuss how we can work together.
+            Ready to bring your ideas to life? I'd love to hear about your
+            project and discuss how we can work together.
           </p>
         </div>
-        
+
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold font-outfit mb-6">Get in Touch</h3>
+              <h3 className="text-2xl font-semibold font-outfit mb-6">
+                Get in Touch
+              </h3>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                I'm always interested in new opportunities, collaborations, and challenging projects. 
-                Whether you have a question or just want to say hi, feel free to reach out!
+                I'm always interested in new opportunities, collaborations, and
+                challenging projects. Whether you have a question or just want
+                to say hi, feel free to reach out!
               </p>
             </div>
-            
+
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <div className="gradient-primary w-12 h-12 rounded-full flex items-center justify-center">
@@ -55,90 +58,90 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <a 
-                    href="mailto:hello@example.com" 
+                  <a
+                    href="mailto:sandipbhatta477@example.com"
                     className="text-muted-foreground hover:text-accent transition-smooth"
                   >
-                    hello@example.com
+                    sandipbhatta477@example.com
                   </a>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-4">
                 <div className="gradient-accent w-12 h-12 rounded-full flex items-center justify-center">
                   <Phone className="text-white" size={20} />
                 </div>
                 <div>
                   <p className="font-medium">Phone</p>
-                  <a 
-                    href="tel:+1234567890" 
+                  <a
+                    href="tel:+1234567890"
                     className="text-muted-foreground hover:text-accent transition-smooth"
                   >
-                    +1 (234) 567-8900
+                    +977 9768428249
                   </a>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-4">
                 <div className="gradient-primary w-12 h-12 rounded-full flex items-center justify-center">
                   <MapPin className="text-white" size={20} />
                 </div>
                 <div>
                   <p className="font-medium">Location</p>
-                  <p className="text-muted-foreground">San Francisco, CA</p>
+                  <p className="text-muted-foreground">Tinkune, Kathmandu</p>
                 </div>
               </div>
             </div>
           </div>
-          
+
           <Card className="bg-card border-border shadow-card">
             <CardContent className="p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">Name</Label>
-                    <Input 
-                      id="name" 
-                      placeholder="Your Name" 
-                      required 
+                    <Input
+                      id="name"
+                      placeholder="Your Name"
+                      required
                       className="bg-background border-border focus:border-accent transition-smooth"
                     />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email</Label>
-                    <Input 
-                      id="email" 
-                      type="email" 
-                      placeholder="your.email@example.com" 
-                      required 
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="your.email@example.com"
+                      required
                       className="bg-background border-border focus:border-accent transition-smooth"
                     />
                   </div>
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="subject">Subject</Label>
-                  <Input 
-                    id="subject" 
-                    placeholder="Project Inquiry" 
-                    required 
+                  <Input
+                    id="subject"
+                    placeholder="Project Inquiry"
+                    required
                     className="bg-background border-border focus:border-accent transition-smooth"
                   />
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="message">Message</Label>
-                  <Textarea 
-                    id="message" 
+                  <Textarea
+                    id="message"
                     placeholder="Tell me about your project..."
                     rows={6}
-                    required 
+                    required
                     className="bg-background border-border focus:border-accent transition-smooth resize-none"
                   />
                 </div>
-                
-                <Button 
-                  type="submit" 
+
+                <Button
+                  type="submit"
                   className="w-full gradient-primary hover:shadow-glow transition-smooth"
                   disabled={isSubmitting}
                 >
